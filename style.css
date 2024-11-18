@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: cyan;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.info div {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#clicker {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#clicker img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#coins img, #energy img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#clicker:hover {
+    transform: scale(1.1);
+}
+
+#clicker:active {
+    transform: scale(0.9);
+}
